@@ -1,0 +1,8 @@
+- IDE: VS Code 1.104.1
+- Python: 3.13.7
+- Virtual Environment: venv (.\venv\Scripts\Activate.ps1)
+- Pip: 25.2
+- Django: 5.2.6
+- Terminal: Windows PowerShell
+- Git: 2.51.0.windows.1
+- OS: Windows 11
