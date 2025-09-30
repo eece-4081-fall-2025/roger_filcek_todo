@@ -1,0 +1,29 @@
+Epic: Task Management
+---------------------
+1. As a User, I would like to quickly add new tasks with a title and optional details so that I understand my tasks.
+2. As a User, I would like to put tasks as complete so that I can track progress.
+3. As a User, I would like to be able to edit tasks so that updates are quick and easy.
+4. As a User, I would like to archive tasks that I would like to view later after deletion
+
+Epic: UI & Organization
+-----------------------
+5. As a User, I would like to see a clean dashboard showing my tasks so that I can understand my day at a glance.
+6. As a User, I would like to create lists so that I can organize tasks by category.
+7. As a User, I would like to search tasks by keyword so that I can quickly find what I need.
+8. As a User, I would like to set priorities so that important tasks stand out.
+9. As a User, I would like to sort tasks by due date or priority so that I can control how I view them.
+10. As a User, I would like to customize my task colors so that I can organize them efficiently.
+
+Epic: Reminders
+----------------
+11. As a User, I would like to receive a notification when a task is due so that I don’t miss deadlines.
+12. As a User, I would like to receive a daily summary of today’s tasks so that I can plan my day.
+13. As a User, I would like to get a follow-up if I ignore a reminder so that I’m reminded again later.
+14. As a User, I would like to have tasks be integrated into my calendar so that I can view them quickly.
+15. As a User, I would like to have mobile notifications so that I can always keep track of tasks.
+
+Epic: Account / Management
+--------------------------
+16. As a User, I would like to create an account so that my tasks are saved securely.
+17. As a User, I would like to log in and out so that I can access my tasks across devices.
+18. As a User, I would like to update my profile information so that my account stays current.
