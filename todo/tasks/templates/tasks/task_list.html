@@ -1,0 +1,20 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>Tasks</h1>
+    <p><a href="{% url 'task_create' %}">Add Task</a></p>
+    <ul>
+      {% for t in tasks %}
+        <li>
+          <strong{% if t.completed %} style="text-decoration:line-through;"{% endif %}>{{ t.title }}</strong>
+          {% if t.details %}<div>{{ t.details }}</div>{% endif %}
+          <form action="{% url 'task_complete' t.pk %}" method="post" style="display:inline;">{% csrf_token %}<button {% if t.completed %}disabled{% endif %}>Complete</button></form>
+          <a href="{% url 'task_update' t.pk %}">Edit</a>
+          <form action="{% url 'task_archive' t.pk %}" method="post" style="display:inline;">{% csrf_token %}<button>Archive</button></form>
+        </li>
+      {% empty %}
+        <li>No tasks yet.</li>
+      {% endfor %}
+    </ul>
+  </body>
+</html>

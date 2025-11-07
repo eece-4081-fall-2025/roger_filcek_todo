@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+  <body>
+    <h1>{% if task %}Edit Task{% else %}New Task{% endif %}</h1>
+
+    {% if errors %}
+      <ul style="color:red;">{% for e in errors %}<li>{{ e }}</li>{% endfor %}</ul>
+    {% endif %}
+
+    <form method="post">
+      {% csrf_token %}
+      <label>Title</label><br>
+      <input name="title" value="{% if task %}{{ title|default:task.title }}{% else %}{{ title|default:'' }}{% endif %}"><br><br>
+
+      <label>Details (optional)</label><br>
+      <textarea name="details">{% if task %}{{ details|default:task.details }}{% else %}{{ details|default:'' }}{% endif %}</textarea><br><br>
+
+      <button>Save</button>
+    </form>
+
+    <p><a href="{% url 'task_list' %}">Back</a></p>
+  </body>
+</html>
